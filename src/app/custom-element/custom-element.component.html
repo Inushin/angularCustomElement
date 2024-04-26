@@ -1,0 +1,11 @@
+<h5>CUSTOM ELEMENT TEMPLATE</h5>
+<label>Add an item: <input #newItem></label>
+<button (click)="example_button_click(newItem.value)">Add item</button>
+<p>Inside element:</p>
+<ul>
+  @for (item of custom_array; track item) {
+    <li>{{ item }}</li>
+  } @empty {
+    <span>Empty list of items from Custom element</span>
+  }
+</ul>
